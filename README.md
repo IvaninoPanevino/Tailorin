@@ -13,3 +13,11 @@ Ho creato il layout di base per la Home page, in più ho creato altre due pagine
 ***********************************************************************************************************************************
 
 -Nicola Daniele : Gestione Livello 3 Sito -> 22/04/20
+
+***********************************************************************************************************************************
+
+-Davide Di Antonio: Gestione Livello 4 Sito -> 22/04/20
+1.Creazione/modifica/cancellazione dati utenti staff;
+2.Cancellazione utenti registrati;
+
+***********************************************************************************************************************************
