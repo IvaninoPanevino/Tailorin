@@ -9,4 +9,7 @@ Ho creato il layout di base per la Home page, in più ho creato altre due pagine
 ***********************************************************************************************************************************
 
 -Quang Trung T.: Gestione Livello 2 Sito -> 22/04/20
-Progettazione logistica del livello 2
+
+-Davide Di Antonio: Gestione Livello 4 Sito -> 22/04/20
+1.Creazione/modifica/cancellazione dati utenti staff;
+2.Cancellazione utenti registrati;
