@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8-mag-2020, 13.31.43
+    Author     : Ivan Gismondi
+*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+body
+{
+	margin: 0;
+	padding: 0;
+	/*min-height: 100vh;*/
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+/*-----------gestione Section, Header con logo e menu, Socials----------*/
+section
+{
+	position: absolute;
+        padding-top: 1%;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 0 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+header .logo
+{
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	animation: fadeIn 0.5s linear forwards;
+	animation-delay: 0.75s;
+}
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+header ul
+{
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+	display: flex;
+}
+header ul li:nth-child(1),
+.sci li:nth-child(1)
+{
+	animation-delay: 0.75s;
+}
+header ul li:nth-child(2),
+.sci li:nth-child(2)
+{
+	animation-delay: 1s;
+}
+header ul li:nth-child(3),
+.sci li:nth-child(3)
+{
+	animation-delay: 1.25s;
+}
+header ul li:nth-child(4),
+.sci li:nth-child(4)
+{
+	animation-delay: 1.5s;
+}
+.header ul li:nth-child(5),
+.sci li:nth-child(5)
+{
+	animation-delay: 1.75s;
+}
+header ul li:nth-child(6),
+.sci li:nth-child(6)
+{
+	animation-delay: 2s;
+}
+header ul li
+{
+	opacity: 0;
+	list-style: none;
+	margin: 0 10px;
+	animation: fadeInRight 0.5s linear forwards;
+}
+header ul li:last-child
+{
+	margin-right: 0;
+}
+header ul li a
+{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #000;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+header ul li a.active,
+header ul li a:hover
+{
+	background: #000;
+	color: #fff;
+}
+@keyframes fadeInRight
+{
+	0%
+	{
+		transform: translateX(150px);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/*---------------------altro-----------------*/
+.row{
+    width: 1200px;
+}
+.left-column{
+    float: left;
+    width: 25%;
+    background: #ccccff;
+}
+.right-column{
+    float: right;
+    width: 75%;
+    background: #ccffff;
+}
+.main-body{
+    padding: 20px;
+    margin-top: 20px;
+}
+.main-body h2{
+    text-align: center;
+}
+.main-body img{
+    width: 400px;
+    height: 320px;
+
+}
+
