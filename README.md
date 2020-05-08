@@ -21,3 +21,7 @@ Ho creato il layout di base per la Home page, in più ho creato altre due pagine
 2.Cancellazione utenti registrati;
 
 ***********************************************************************************************************************************
+-Ivan G.: Gestione Livello 1 Sito -> 08/05/20
+Ho reso più digeribile il layout del sito.
+(è da risistemare un pochino)
+***********************************************************************************************************************************
