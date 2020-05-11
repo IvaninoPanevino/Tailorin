@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+ <title>Tailorin | Administration</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="C:\Users\diant\Desktop\Tailorin_Admin\admin_page.css">
+ <style>
+  
+ </style>
+ <!-- Mostra password -->
+ <script>
+  function showPassword() {
+  var x = document.getElementById("pswd");
+  if (x.type == "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ </script>
+</head>
+<body class="w3-light-gray">
+ <!-- Contenuto della top bar -->
+  <header class="w3-dark-gray">
+   <h2 class="logo">Tailorin</h2>
+  </header>
+ <!-- Sidebar menu -->
+ <div class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px;" id="Sidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s8 w3-bar">
+	  <span>Welcome,<strong> Admin</strong></span><br>
+      <a href="C:\Users\diant\Desktop\Tailorin\Progetto\public_html\index.html" title="Sign out" class="w3-bar-item w3-circle"><i class="fa fa-user-circle" style="font-size:24px"></i></a><br>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#products" class="w3-bar-item w3-button w3-padding"><i class="fa fa-gbp fa-fw"></i><b>Products</b></a>
+	<button class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i><b>Users managment</b></button>
+	 <div class="w3-dropdown w3-bar-block">
+      <a href="#staff_users" class="w3-bar-item w3-button"><i>Staff users</i></a>
+      <a href="#customers" class="w3-bar-item w3-button"><i>Customers</i></a>
+     </div>
+    <a href="#notes" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i><b>Notes</b></a>
+    <a href="#settings" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i><b>Settings</b></a><br><br>
+  </div>
+ </div>
+ <!-- Contenuto della pagina -->
+ <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <div id="id" class="w3-modal">
+   <div class="w3-modal-content w3-animate-top" style="max-width: 600px">
+    <span onclick="document.getElementById('id').style.display='none'" class="w3-button w3-display-topright" title="close modal">&times;</span>
+     <div class="w3-container w3-center">
+	  <h2><strong>Staff user</strong></h2>
+      <p>Please,fill in this form to add a staff member.</p>
+      <hr>
+	  <form action="staffdb.php" method="post">
+      <label for="Firstname"><b>Firstname</b></label><br>
+       <input type="text" placeholder="Firstname" name="frstnm" required><br><br>
+	  <label for="Lastname"><b>Lastname</b></label><br>
+       <input type="text" placeholder="Lastname" name="lstnm" required><br><br>
+      <label for="Email"><b>E-mail address</b></label><br>
+       <input type="text" placeholder="E-mail address" name="email" required><br><br>
+	  <label for="Password"><b>Password</b></label><br>
+	   <input type="password" placeholder="Password" id="pswd" required><br>
+	   <input type="checkbox" onclick="showPassword()">Show Password<br><br>
+	   <input type="submit" value="Submit" class="w3-button w3-blue-gray w3-rounded-large"><br><br>
+	  </form>
+     </div>
+	</div>
+  </div>
+  <div class="w3-bar w3-light-grey"></div>
+   <div class="w3-bar-item"><h4 id="products"><b>Products</b></h4></div>
+  <div class="w3-bar w3-light-grey"></div>
+   <div class="w3-bar-item"><h4 id="users"><b>Users Managment</b></h4></div>
+    <div class="w3-bar-item"><h4 id="staff_users"><i>Staff users</i></h4></div>
+     <table class="w3-table w3-borderer w3-centered">
+	  <tr class="w3-white">
+	  <td>
+	   <div class="w3-bar w3-small">
+        <a href="#" class="w3-button">&laquo;</a>
+        <a href="#" class="w3-button">&raquo;</a>
+       </div>
+	  </td>
+	  <td></td>
+	  <td>
+	   <div class="fa fa-search"></div>
+	   <label for="search">Search user </label>
+	   <input id="search" type="text" class="w3-round-large">
+	  </td>
+	  <td></td>
+	  <td>
+	   <button class="w3-button w3-blue-gray w3-rounded-large" onclick="document.getElementById('id').style.display='block'">+Add staff user</button>
+	  </td>
+	  </tr>
+	  <tr>
+      <th>First name</th>
+      <th>Last name</th>
+	  <th>E-mail address</th>
+      <th>Settings</th>
+	  <th>Delete</th>
+      </tr>
+     </table>
+	 <div class="w3-bar-item"><h4 id="staff_users"><i>Customers</i></h4></div>
+     <table class="w3-table w3-borderer w3-centered">
+	  <tr class="w3-white">
+	  <td>
+	   <div class="w3-bar w3-small">
+        <a href="#" class="w3-button">&laquo;</a>
+        <a href="#" class="w3-button">&raquo;</a>
+       </div>
+	  </td>
+	  <td></td>
+	  <td>
+	   <div class="fa fa-search"></div>
+	   <label for="search">Search customer </label>
+	   <input id="search" type="text" class="w3-round-large">
+	  </td>
+	  </tr>
+	  <tr>
+	  <th>Username</th>
+	  <th>E-mail address</th>
+	  <th>Delete</th>
+	  </tr>
+	 </table>
+   <div class="w3-bar w3-light-grey"></div>
+    <div class="w3-bar-item"><h4 id="notes"><b>Notes</b></h4></div>
+   <div class="w3-bar w3-light-grey"></div>
+    <div class="w3-item-bar"><h4 id="settings"><b>Settings</b></h4></div>
+   </div>
+   
+</body>
+</html>
