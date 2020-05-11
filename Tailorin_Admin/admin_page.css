@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+
+@keyframes fadeIn{
+    0%
+    {
+	opacity: 0;
+    }
+    100%
+    {
+    	opacity: 1;
+    }
+}
+
+@keyframes fadeInRight
+{
+    0%
+    {
+	transform: translateX(150px);
+	opacity: 0;
+    }
+    100%
+    {
+	transform: translateX(0);
+	opacity: 1;
+    }
+}
+
+@keyframes revealText{
+	0%
+	{
+		transform: scaleX(1);
+	}
+	100%
+	{
+		transform: scaleX(0);
+	}
+}
+
+@keyframes revealTextReverse{
+	0%
+	{
+		transform: scaleX(0);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+
+@keyframes fadeInBottom{
+    0%
+    {
+	transform: translateY(50px);
+	opacity: 0;
+    }
+    100%
+    {
+	transform: translateY(0);
+	opacity: 1;
+    }
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header{
+  clear:both;
+  overflow:auto;
+}
+.logo{
+    
+    float:left;
+    margin: 5px;
+    padding:2% 5% 0 5%;
+    font-size: 2em;
+    text-transform: uppercase;
+   
+}
+
+
