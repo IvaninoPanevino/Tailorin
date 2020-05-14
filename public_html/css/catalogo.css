@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 8-mag-2020, 13.31.43
+    Created on : 14-mag-2020, 13.46.43
     Author     : Ivan Gismondi
 */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
@@ -12,7 +12,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	/*min-height: 100vh;*/
+	min-height: 100vh;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 /*-----------gestione Section, Header con logo e menu, Socials----------*/
@@ -21,27 +21,24 @@ section
 	position: absolute;
         padding-top: 1%;
 	width: 100%;
-	height: 100%;
+	height: 530px;
 	background: #fff;
 	display: grid;
-	justify-content: center;
-	align-items: center;
 	overflow: hidden;
 }
 
 header{
-  clear:both;
-  overflow:auto;
+  height: 80px;
 }
 .logo{
-    opacity: 0;
+    /*opacity: 1;*/
     float:left;
     margin: 0 10px;
-    padding: 2% 5%;
+    padding:2% 5% 0 5%;
     font-size: 2em;
     text-transform: uppercase;
-    animation: fadeIn 0.5s linear forwards;
-    animation-delay: 0.75s;
+    /*animation: fadeIn 0.5s linear forwards;
+    animation-delay: 0.75s;*/
 }
 @keyframes fadeIn{
     0%
@@ -55,19 +52,19 @@ header{
 }
 nav{
     float:right;
-    padding: 2% 5%;
+    padding:2% 5% 0 5%;
+    
 }
 nav ul{
     margin: 0;
     padding: 0;
     display: flex;
-    z-index: 100;
 }
 nav ul li{
-    opacity: 0;
+    opacity: 1;
     list-style: none;
     margin: 0 10px;
-    animation: fadeInRight 0.5s linear forwards;
+    /*animation: fadeInRight 0.5s linear forwards;*/
 }
 @keyframes fadeInRight
 {
@@ -98,7 +95,7 @@ nav ul li a.active,
 nav ul li a:hover{
 	background: #000;
 	color: #fff;
-}
+}/*
 nav ul li:nth-child(1){
 	animation-delay: 0.75s;
 }
@@ -116,31 +113,56 @@ nav ul li:nth-child(5){
 }
 nav ul li:nth-child(6){
 	animation-delay: 2s;
-}
+}*/
 /*---------------------altro-----------------*/
 .row{
-    width: 1024px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
 }
 .left-column{
     float: left;
-    width: 25%;
+    width: 15%;
+    height: 100%;
+    padding: 2% 5%;
     background: #ccccff;
 }
 .right-column{
     float: right;
+    overflow:auto;
     width: 75%;
+    height: 100%;
     background: #ccffff;
 }
 .main-body{
+    margin: 0 -5px;
     padding: 20px;
-    margin-top: 20px;
 }
-.main-body h2{
+.main-body:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+.product{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1
+}
+
+.product h2{
     text-align: center;
 }
-.main-body img{
-    width: 400px;
-    height: 320px;
+.product img{
+    width: 10em;
+    height: 8em;
 
 }
 /*---------------------------------------------*/
