@@ -1,7 +1,8 @@
                                                         # Tailorin WebSite #
   
 ***********************************************************************************************************************************
-                                        LA CARTELLA DEL PROGETTO SI CHIAMA "Tailorin-Website"           
+                                       LA CARTELLA DEL PROGETTO SI CHIAMA "Tailorin-Website"           
+    
     
 -Ivan G.: Gestione Livello 1 Sito -> dal 19/04/20 al 22/04/20
 Ho creato il layout di base per la Home page, in più ho creato altre due pagine:
