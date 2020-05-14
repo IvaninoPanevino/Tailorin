@@ -4,29 +4,32 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 8-mag-2020, 13.31.43
-    Author     : Ivan Gismondi
+    Created on : 14-mag-2020, 17.42.27
+    Author     : user
 */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
-body
-{
+body{
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
-/*-----------gestione Section, Header con logo e menu, Socials----------*/
-section
-{
+/*---------------inizio section slogan---------------*/
+section{
 	position: absolute;
-        padding-top: 1%;
 	width: 100%;
 	height: 530px;
 	background: #fff;
 	display: grid;
+	justify-content: center;
+	align-items: center;
 	overflow: hidden;
 }
-
+section img{
+    width: 400px;
+    height: 320px;
+}
+/*-------------------------------------------------*/
 header{
   height: 80px;
 }
@@ -36,12 +39,10 @@ header{
     padding:2% 5% 0 5%;
     font-size: 2em;
     text-transform: uppercase;
-
 }
 nav{
     float:right;
     padding:2% 5% 0 5%;
-    
 }
 nav ul{
     margin: 0;
@@ -69,58 +70,64 @@ nav ul li a:hover{
 	background: #000;
 	color: #fff;
 }
-/*---------------------altro-----------------*/
-.row{
-    width: 100%;
-    height: 100%;
-    background-color: #000;
+/*-------------------------------------------------*/
+.bannerText{
+	position: absolute;
+	top: 40%;
+	left: 7%;
+	transform: translateY(-50%);
+	max-width: 700px;
 }
-.left-column{
-    float: left;
-    width: 15%;
-    height: 100%;
-    padding: 2% 5%;
-    background: #ccccff;
+.bannerText h2,
+.bannerText h3
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-transform: uppercase;
 }
-.right-column{
-    float: right;
-    overflow:auto;
-    width: 75%;
-    height: 100%;
-    background: #ccffff;
+.bannerText h2{
+	font-size: 6em;
 }
-.main-body{
-    margin: 0 -5px;
-    padding: 20px;
+.bannerText h3{
+	font-size: 3em;
 }
-.main-body:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.column{
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    background-color: #000;
-}
-.product{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1
+.bannerText h2:before,
+.bannerText h3:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.product h2{
-    text-align: center;
+.bannerText p{
+	font-weight: 400;
+	font-size: 1.2em;
 }
-.product img{
-    width: 10em;
-    height: 8em;
+.bannerText a{
+	display: inline-block;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+/*---------------fine section slogan---------------*/
 
+.bulb{
+    width: 450px;
+    height: 350px;
+	position: absolute;
+	right: 6%;
+	top: 50%;
+	transform: translateY(-50%);
 }
-/*---------------------------------------------*/
 .sci{
 	position: absolute;
 	bottom: 15px;
